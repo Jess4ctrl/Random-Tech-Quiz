@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random Tech Quiz - Home</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="brand">Random Tech Quiz</h1>
+		</tdiv>
+	</header>
+
+	<main class="container">
+		<section class="card">
+			<h2>Welcome</h2>
+			<p>
+				Test your knowledge in computers and technology. Choose a difficulty and start a
+				random quiz powered by OpenTDB.
+			</p>
+
+			<div class="note">
+				<strong>How it works</strong>
+				<ul>
+					<li>10 multiple-choice questions from OpenTDB (Computer category).</li>
+					<li>Choose a difficulty: Any, Easy, Medium, or Hard.</li>
+					<li>Click an answer once to lock it in. Answers reveal immediately.</li>
+					<li>Use the Next button to go to the following question.</li>
+					<li>Your score shows at the end, and you can retry.</li>
+				</ul>
+			</div>
+
+			<form id="start-form" class="form">
+				<label for="difficulty">Select difficulty</label>
+				<select id="difficulty" name="difficulty" required>
+					<option value="any">Any difficulty</option>
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+
+				<button type="submit" class="btn primary">Start Quiz</button>
+			</form>
+		</section>
+
+		<section class="card muted">
+			<h3>About</h3>
+			<p>
+				This website was made to help users test their knowledge about computers and technology. 
+				Each quiz gives 10 random questions that cover different topics like hardware, software, 
+				and general tech facts.
+			</p>
+			<p>
+				You can choose your preferred difficulty level and see how much you really know. Whether 
+				you’re just learning or already a tech lover, this quiz is a quick and fun way to challenge yourself.
+			</p>
+			<p>
+				Credits:
+				<br>
+				Quiz questions and data are provided by the <a href="https://opentdb.com/">Open Trivia Database</a>. All content is used for educational purposes only.
+			</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<small>© <span id="year"></span> Random Tech Quiz</small>
+		</div>
+	</footer>
+
+	<script src="js/config.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+

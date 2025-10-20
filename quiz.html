@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random Tech Quiz - Quiz</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="brand">Random Tech Quiz</h1>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="card" id="quiz-card">
+			<p class="note" style="margin-top:0">
+				Answers lock on first tap/click. Correct answer highlights in green.
+			</p>
+			<div class="quiz-meta">
+				<div id="difficulty-pill" class="pill">Any</div>
+				<div id="progress" class="progress">Question 1 of 10</div>
+			</div>
+
+			<h2 id="question">Loading question…</h2>
+
+			<ul id="answers" class="answers"></ul>
+
+			<div class="actions">
+				<button id="next" class="btn" disabled>Next</button>
+			</div>
+		</section>
+
+		<section class="card hidden" id="result-card">
+			<h2>Your Result</h2>
+			<p id="score"></p>
+			<div class="actions">
+				<a href="index.html" class="btn">Back to Home</a>
+				<button id="retry" class="btn primary">Retry</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<small>© <span id="year"></span> Random Tech Quiz</small>
+		</div>
+	</footer>
+
+	<script src="js/config.js"></script>
+	<script src="js/quiz.js"></script>
+</body>
+</html>
+
